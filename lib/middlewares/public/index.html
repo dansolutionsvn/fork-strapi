@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Welcome to your Strapi app</title>
+    <title>TAMDAGROUP CONTENT MANAGEMENT SYSTEM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
@@ -15,7 +15,8 @@
   </head>
   <body lang="en">
     <section class="wrapper">
-      <h1><img class="logo" src="<%= strapi.config.server.url %>/assets/images/logo_login.png" /></h1>
+      <h1><img class="logo" src="https://tamdacms-strapi.s3.eu-central-1.amazonaws.com/favicon_206ca3c9e4.png" /></h1>
+      <h2>TAMDAGROUP CONTENT MANAGEMENT SYSTEM</h2>
       <% if (strapi.config.environment === 'development' && isInitialized) { %>
         <div class="informations">
           <div>
@@ -34,7 +35,6 @@
       <% } else if (strapi.config.environment === 'development' && !isInitialized) { %>
         <div class="lets-started">
           <h2>Let's get started!</h2>
-          <p>To discover the power provided by Strapi, you need to create an administrator.</p>
           <a class="cta cta-secondary" href="<%= strapi.config.admin.url %>" target="_blank" title="Click to create the first administration" ><i class="fas fa-external-link-alt"></i>Create the first administrator</a>
           <div class="people-saying-hello">
             <img class="visible" src="<%= strapi.config.server.url %>/assets/images/group_people_1.png" alt="People saying hello" />
