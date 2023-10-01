@@ -1,76 +1,20 @@
 {
-  "name": "@strapi/strapi",
+  "name": "@danhuyenphan/strapi",
   "version": "4.9.2",
   "description": "An open source headless CMS solution to create and manage your own API. It provides a powerful dashboard and features to make your life easier. Databases supported: MySQL, MariaDB, PostgreSQL, SQLite",
-  "keywords": [
-    "strapi",
-    "cms",
-    "cmf",
-    "content management system",
-    "content management framework",
-    "admin panel",
-    "dashboard",
-    "api",
-    "auth",
-    "framework",
-    "http",
-    "json",
-    "koa",
-    "koajs",
-    "helmet",
-    "mvc",
-    "oauth",
-    "oauth2",
-    "orm",
-    "rest",
-    "restful",
-    "security",
-    "jam",
-    "jamstack",
-    "javascript",
-    "headless",
-    "MySQL",
-    "MariaDB",
-    "PostgreSQL",
-    "SQLite",
-    "graphqL",
-    "infrastructure",
-    "backend",
-    "open source",
-    "self hosted",
-    "lerna",
-    "lernajs",
-    "react",
-    "reactjs"
-  ],
   "homepage": "https://strapi.io",
-  "bugs": {
-    "url": "https://github.com/strapi/strapi/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/strapi/strapi.git"
-  },
-  "license": "SEE LICENSE IN LICENSE",
-  "author": {
-    "name": "Strapi Solutions SAS",
-    "email": "hi@strapi.io",
-    "url": "https://strapi.io"
-  },
+  "license": "MIT",
+  "author": "Strapi Solutions SAS <hi@strapi.io> (https://strapi.io)",
   "maintainers": [
-    {
-      "name": "Strapi Solutions SAS",
-      "email": "hi@strapi.io",
-      "url": "https://strapi.io"
-    }
+    "Strapi Solutions SAS <hi@strapi.io> (https://strapi.io)"
   ],
   "main": "./lib",
   "types": "./lib/index.d.ts",
-  "bin": "./bin/strapi.js",
+  "bin": {
+    "strapi": "bin/strapi.js"
+  },
   "directories": {
-    "lib": "./lib",
-    "bin": "./bin",
-    "ee": "./ee"
+    "lib": "lib"
   },
   "scripts": {
     "postinstall": "node lib/utils/success.js",
@@ -81,14 +25,14 @@
   "dependencies": {
     "@koa/cors": "3.4.3",
     "@koa/router": "10.1.1",
-    "@strapi/admin": "4.9.2",
+    "@strapi/admin": "@danhuyenphan/strapi-admin@4.9.2",
     "@strapi/data-transfer": "4.9.2",
     "@strapi/database": "4.9.2",
     "@strapi/generate-new": "4.9.2",
     "@strapi/generators": "4.9.2",
     "@strapi/logger": "4.9.2",
     "@strapi/permissions": "4.9.2",
-    "@strapi/plugin-content-manager": "4.9.2",
+    "@strapi/plugin-content-manager": "@danhuyenphan/plugin-content-manager@4.9.2",
     "@strapi/plugin-content-type-builder": "4.9.2",
     "@strapi/plugin-email": "4.9.2",
     "@strapi/plugin-upload": "4.9.2",
@@ -141,6 +85,5 @@
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
-  },
-  "gitHead": "91e0be2708e4d1e8ec731c75e73e54c0dfacb67d"
+  }
 }
